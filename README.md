@@ -1,6 +1,8 @@
 <h1> Smart Automated Greenhouse System </h1>
 <h3>(Skills Network Bootcamp: Industry Week Project)</h3>
-<br>
+<hr>
+<strong>Website Link: https://mattrich98.github.io/smartautogreenhouse/</strong>
+<hr>
 As part of the software development bootcamp curriculum, each of us is tasked with creating a project that demonstrates an automated greenhouse. (I misunderstood the assignment, it was meant to be group work)
 <br>
 <br>
