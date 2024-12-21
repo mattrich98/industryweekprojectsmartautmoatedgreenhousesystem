@@ -3,8 +3,64 @@
 <br>
 As part of the software development bootcamp curriculum, each of us is tasked with creating a project that demonstrates an automated greenhouse. (I misunderstood the assignment, it was meant to be group work)
 <br>
+<br>
+(However, I will still complete the project)
+<br>
 <hr>
-<h3>Plans:</h3>
+<h3>New Simplified Plans:</h3>
+<ol>
+<li>Reverse temperature bar, upside-down.</li>
+<li>Add other four temperature options</li>
+<li>Images that correspond with number changes in javaScript</li>
+<li>Add image output box that prints the console code.</li>
+</ol>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h3>Old Plans and Information Below:</h3>
 <ol>
 <li><s>Basic layout done</s></li>
 <li><s> Buttons that have booleans for true and false</s></li>
