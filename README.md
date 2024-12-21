@@ -1,8 +1,10 @@
-<h1>Industry Week Project: Smart Automated Greenhouse System</h1>
+<h1> Smart Automated Greenhouse System </h1>
+<h3>(Skills Network Bootcamp: Industry Week Project)</h3>
+<br>
 As part of the software development bootcamp curriculum, each of us is tasked with creating a project that demonstrates an automated greenhouse. (I misunderstood the assignment, it was meant to be group work)
 <br>
 <hr>
-<strong><u>Plans:</u></strong>
+<h3>Plans:</h3>
 <ol>
 <li><s>Basic layout done</s></li>
 <li><s> Buttons that have booleans for true and false</s></li>
