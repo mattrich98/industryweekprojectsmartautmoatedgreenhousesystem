@@ -11,7 +11,7 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
 <ol>
 <li>Reverse temperature bar, upside-down.</li>
 <li>Add other four temperature options</li>
-<li>Images that correspond with number changes in javaScript</li>
+<li>Add the visual imagery that correspond with number changes in javaScript</li>
 <li>Add image output box that prints the console code.</li>
 </ol>
 <hr>
