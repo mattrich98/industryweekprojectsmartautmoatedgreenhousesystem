@@ -12,7 +12,7 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
 <h3>New Simplified Plans:</h3>
 <ol>
 <li><s>Reverse temperature bar, upside-down. (I might try to add radius to the bottom and top, so it looks like a thermometer.)</s></li>
-<li>Add other four temperature options</li>
+<li><s>Add other four temperature options</s></li>
 <li>Add the visual imagery that correspond with number changes in javaScript</li>
 <li><s>Add image output box that prints the console code.</s> -- Maybe this is not really necessary to add</li>
 </ol>
