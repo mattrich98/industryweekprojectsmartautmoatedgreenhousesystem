@@ -38,6 +38,7 @@
     background-color: red;
     position: absolute;
     
+    
 }
 
 #sunBar{
@@ -60,6 +61,19 @@
     border-radius: 100px;
     margin-left: 2.49px;
     margin-top: 2px;
+    top: 270px;
+}
+
+#sunPercent2{
+    width: 20px;
+    height: 0px;
+    background-color: red;
+    position: absolute;
+    opacity: 70%;
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-top: 2px;
+    top: 260px;
 }
 
 #buttonContainer{
