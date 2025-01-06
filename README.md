@@ -1,10 +1,68 @@
 <h1> Smart Automated Greenhouse System </h1>
 <h3>(Skills Network Bootcamp: Industry Week Project)</h3>
-<br>
+<hr>
+<strong>Website Link: https://mattrich98.github.io/smartautogreenhouse/</strong>
+<hr>
 As part of the software development bootcamp curriculum, each of us is tasked with creating a project that demonstrates an automated greenhouse. (I misunderstood the assignment, it was meant to be group work)
 <br>
+<br>
+(However, I will still complete the project)
+<br>
 <hr>
-<h3>Plans:</h3>
+<h3>New Simplified Plans:</h3>
+<ol>
+<li>Reverse temperature bar, upside-down. (I might try to add radius to the bottom and top, so it looks like a thermometer.)</li>
+<li>Add other four temperature options</li>
+<li>Add the visual imagery that correspond with number changes in javaScript</li>
+<li>Add image output box that prints the console code.</li>
+</ol>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h3>Old Plans and Information Below:</h3>
 <ol>
 <li><s>Basic layout done</s></li>
 <li><s> Buttons that have booleans for true and false</s></li>
