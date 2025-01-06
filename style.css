@@ -83,7 +83,7 @@
     margin: auto;
 }
 
-#inputButton { /*hashtag is for CSS ID */
+#inputButton1 { /*hashtag is for CSS ID */
     background-color: rgb(255, 255, 255);
     width: 100px;
     height: 30px;;
@@ -94,6 +94,43 @@
     z-index: 9999;
     position:relative;
 }
+
+#inputButton2 { /*hashtag is for CSS ID */
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 30px;;
+
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    z-index: 9999;
+    position:relative;
+}
+
+#inputButton3 { /*hashtag is for CSS ID */
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 30px;;
+
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    z-index: 9999;
+    position:relative;
+}
+
+#inputButton4 { /*hashtag is for CSS ID */
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 30px;;
+
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    z-index: 9999;
+    position:relative;
+}
+
 
 #windowButton { /*hashtag is for CSS ID */
     background-color: rgb(255, 255, 255);
