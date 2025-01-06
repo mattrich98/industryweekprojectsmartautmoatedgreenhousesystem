@@ -11,7 +11,7 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
 <hr>
 <h3>New Simplified Plans:</h3>
 <ol>
-<li>Reverse temperature bar, upside-down. (I might try to add radius to the bottom and top, so it looks like a thermometer.)</li>
+<li><s>Reverse temperature bar, upside-down. (I might try to add radius to the bottom and top, so it looks like a thermometer.)</s></li>
 <li>Add other four temperature options</li>
 <li>Add the visual imagery that correspond with number changes in javaScript</li>
 <li>Add image output box that prints the console code.</li>
