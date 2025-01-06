@@ -54,14 +54,14 @@
 
 #sunPercent{
     width: 21px;
-    height: 0px;
+    height: 20px;
     background-color: red;
     position: absolute;
     opacity: 70%;
     border-radius: 100px;
     margin-left: 2.49px;
     margin-top: 2px;
-    top: 270px;
+    bottom: 5px; 
 }
 
 #sunPercent2{
@@ -73,7 +73,7 @@
     border-radius: 100px;
     margin-left: 10px;
     margin-top: 2px;
-    top: 260px;
+    bottom: 10px;
 }
 
 #buttonContainer{
