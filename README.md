@@ -22,6 +22,8 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
 
 <img src = "diagramSwitch.png">
 <br>
+<li>I will need to make if statements that respond to the visuals once they reach specific numbers.</li>
+<li>Its important to make sure that the very hot simulator button is completed fully first. (This will make the other three buttons much easier to complete, copying 'hotSim function' and then changes to cold sim/etc and numbers accordingly)</li>
 <br>
 <br>
 <br>
