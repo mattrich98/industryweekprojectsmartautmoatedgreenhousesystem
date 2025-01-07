@@ -20,7 +20,7 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
 <br>
 <h4>(This is what happens when all four buttons below are pressed. The goal is to manipulate a plant that reacts to different weather conditions)</h4>
 
-<span align="center"><img src = "diagramSwitch.png"></span>
+<p align="center"><img src = "diagramSwitch.png"></p>
 <br>
 <li>I will need to make if statements that respond to the visuals once they reach specific numbers.</li>
 <li>Its important to make sure that the very hot simulator button is completed fully first. (This will make the other three buttons much easier to complete, copying 'hotSim function' and then changes to cold sim/etc and numbers accordingly)</li>
