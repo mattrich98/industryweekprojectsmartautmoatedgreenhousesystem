@@ -19,7 +19,8 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
 <hr>
 <br>
 <h4>(This is what happens when all four buttons below are pressed. The goal is to manipulate a plant that reacts to different weather conditions)</h4>
-
+<br>
+<br>
 <p align="center"><img src = "diagramSwitch.png"></p>
 <br>
 <li>I will need to make if statements that respond to the visuals once they reach specific numbers.</li>
