@@ -23,6 +23,7 @@ function timerIntervals() {
   console.log(sunTimer); //checks gameTime is incrementing (JavaScript is a single-threaded language)
 
   
+//Sun Timer (inputbutton4 - VERY HOT - START) ---------------------------
 
   if (sunTimer <= 24) {
     // Dont Touch Below vvvvvvvvvvvvvvvvv
@@ -113,7 +114,304 @@ function timerIntervals() {
     location.reload();
     //console.log("Game Over"); 
   }
+
+//Sun Timer (inputbutton4 - VERY HOT - END) ---------------------------
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+//Sun Timer (inputbutton4 - WINTER DAY - START) ---------------------------
+
+  if (sunTimer <= 24) {
+    // Dont Touch Below vvvvvvvvvvvvvvvvv
+    setTimeout(timerIntervals, 750);
+
+    document.getElementById("timeNumber").innerHTML = sunTimer;
+    document.getElementById("inputButton4").innerHTML = "Started";
+    document.getElementById("inputButton4").style.backgroundColor = "green";
+
+    //stops play button press
+    document.getElementById("inputButton4").onclick = sunTimer; //so you can only click the play button once to start game
+
+
+    if (sunStrength < 35 ) {
+      sunStrength += 5;
+      document.getElementById("sunPercent").innerHTML = sunStrength;
+      document.getElementById("sunPercent").style.height = sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + "px";
+    } else {
+      sunStrength = 35;
+      document.getElementById("sunPercent").innerHTML = sunStrength;
+      //document.getElementById("sunPercent").style.height = "35px";
+    }
+
+    if (sunTimer >= 17) {
+      sunStrength -= 3;
+      document.getElementById("sunPercent").innerHTML = sunStrength;
+      document.getElementById("sunPercent").style.height = sunStrength - sunStrength - sunStrength - sunStrength - sunStrength -sunStrength - sunStrength + "px";
+    } 
+
+    if(sunStrength <= 15){
+      windowStatus == true;
+      document.getElementById("windowButton").style.backgroundColor = "green";
+      sunStrength++
+    }
+    else{
+      windowStatus == false;
+      document.getElementById("windowButton").style.backgroundColor = "white";
+    }
+
+    if(sunStrength <= 13){
+      heaterStatus == true;
+      document.getElementById("heaterButton").style.backgroundColor = "green";
+      sunStrength += 1;
+    }
+    else{
+      windowStatus == false;
+      document.getElementById("heaterButton").style.backgroundColor = "white";
+    }
+
+
+
+
+    if(sunStrength >= 25){
+      fanStatus == true;
+      document.getElementById("fanButton").style.backgroundColor = "green";
+      sunStrength -=3;
+    }
+    else{
+      windowStatus == false;
+      document.getElementById("fanButton").style.backgroundColor = "white";
+    }
+
+
+
+
+
+
+    if(sunStrength >= 19){
+      sprinklerStatus == true;
+      document.getElementById("sprinklerButton").style.backgroundColor = "green";
+      sunStrength-= 3;
+    }
+    else{
+      sprinklerStatus == false;
+      document.getElementById("sprinklerButton").style.backgroundColor = "white";
+    }
+
   
+
+    
+
+
+    //stops setTimeout loop
+  } else if (sunTimer >= 24) { //if the timer reaches 20 seconds
+    
+    document.getElementById("inputButton4").innerHTML = "Simulation Ended"; //changes the start button inner letters
+    alert("Simulation End"); //method alert pop up in browser for final score
+    location.reload();
+    //console.log("Game Over"); 
+  }
+
+  //Sun Timer (inputbutton4 - WINTER DAY - END) ---------------------------
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+  //Sun Timer (inputbutton4 - SUNNY DAY - START) ---------------------------
+
+  if (sunTimer <= 24) {
+    // Dont Touch Below vvvvvvvvvvvvvvvvv
+    setTimeout(timerIntervals, 750);
+
+    document.getElementById("timeNumber").innerHTML = sunTimer;
+    document.getElementById("inputButton4").innerHTML = "Started";
+    document.getElementById("inputButton4").style.backgroundColor = "green";
+
+    //stops play button press
+    document.getElementById("inputButton4").onclick = sunTimer; //so you can only click the play button once to start game
+
+
+    if (sunStrength < 35 ) {
+      sunStrength += 5;
+      document.getElementById("sunPercent").innerHTML = sunStrength;
+      document.getElementById("sunPercent").style.height = sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + "px";
+    } else {
+      sunStrength = 35;
+      document.getElementById("sunPercent").innerHTML = sunStrength;
+      //document.getElementById("sunPercent").style.height = "35px";
+    }
+
+    if (sunTimer >= 17) {
+      sunStrength -= 3;
+      document.getElementById("sunPercent").innerHTML = sunStrength;
+      document.getElementById("sunPercent").style.height = sunStrength - sunStrength - sunStrength - sunStrength - sunStrength -sunStrength - sunStrength + "px";
+    } 
+
+    if(sunStrength <= 15){
+      windowStatus == true;
+      document.getElementById("windowButton").style.backgroundColor = "green";
+      sunStrength++
+    }
+    else{
+      windowStatus == false;
+      document.getElementById("windowButton").style.backgroundColor = "white";
+    }
+
+    if(sunStrength <= 13){
+      heaterStatus == true;
+      document.getElementById("heaterButton").style.backgroundColor = "green";
+      sunStrength += 1;
+    }
+    else{
+      windowStatus == false;
+      document.getElementById("heaterButton").style.backgroundColor = "white";
+    }
+
+
+
+
+    if(sunStrength >= 25){
+      fanStatus == true;
+      document.getElementById("fanButton").style.backgroundColor = "green";
+      sunStrength -=3;
+    }
+    else{
+      windowStatus == false;
+      document.getElementById("fanButton").style.backgroundColor = "white";
+    }
+
+
+
+
+
+
+    if(sunStrength >= 19){
+      sprinklerStatus == true;
+      document.getElementById("sprinklerButton").style.backgroundColor = "green";
+      sunStrength-= 3;
+    }
+    else{
+      sprinklerStatus == false;
+      document.getElementById("sprinklerButton").style.backgroundColor = "white";
+    }
+
+  
+
+    
+
+
+    //stops setTimeout loop
+  } else if (sunTimer >= 24) { //if the timer reaches 20 seconds
+    
+    document.getElementById("inputButton4").innerHTML = "Simulation Ended"; //changes the start button inner letters
+    alert("Simulation End"); //method alert pop up in browser for final score
+    location.reload();
+    //console.log("Game Over"); 
+  }
+
+  //Sun Timer (inputbutton4 - SUNNY DAY - END) ---------------------------
+
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+  //Sun Timer (inputbutton4 - RAINY DAY - START) ---------------------------
+
+  if (sunTimer <= 24) {
+    // Dont Touch Below vvvvvvvvvvvvvvvvv
+    setTimeout(timerIntervals, 750);
+
+    document.getElementById("timeNumber").innerHTML = sunTimer;
+    document.getElementById("inputButton4").innerHTML = "Started";
+    document.getElementById("inputButton4").style.backgroundColor = "green";
+
+    //stops play button press
+    document.getElementById("inputButton4").onclick = sunTimer; //so you can only click the play button once to start game
+
+
+    if (sunStrength < 35 ) {
+      sunStrength += 5;
+      document.getElementById("sunPercent").innerHTML = sunStrength;
+      document.getElementById("sunPercent").style.height = sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + "px";
+    } else {
+      sunStrength = 35;
+      document.getElementById("sunPercent").innerHTML = sunStrength;
+      //document.getElementById("sunPercent").style.height = "35px";
+    }
+
+    if (sunTimer >= 17) {
+      sunStrength -= 3;
+      document.getElementById("sunPercent").innerHTML = sunStrength;
+      document.getElementById("sunPercent").style.height = sunStrength - sunStrength - sunStrength - sunStrength - sunStrength -sunStrength - sunStrength + "px";
+    } 
+
+    if(sunStrength <= 15){
+      windowStatus == true;
+      document.getElementById("windowButton").style.backgroundColor = "green";
+      sunStrength++
+    }
+    else{
+      windowStatus == false;
+      document.getElementById("windowButton").style.backgroundColor = "white";
+    }
+
+    if(sunStrength <= 13){
+      heaterStatus == true;
+      document.getElementById("heaterButton").style.backgroundColor = "green";
+      sunStrength += 1;
+    }
+    else{
+      windowStatus == false;
+      document.getElementById("heaterButton").style.backgroundColor = "white";
+    }
+
+
+
+
+    if(sunStrength >= 25){
+      fanStatus == true;
+      document.getElementById("fanButton").style.backgroundColor = "green";
+      sunStrength -=3;
+    }
+    else{
+      windowStatus == false;
+      document.getElementById("fanButton").style.backgroundColor = "white";
+    }
+
+
+
+
+
+
+    if(sunStrength >= 19){
+      sprinklerStatus == true;
+      document.getElementById("sprinklerButton").style.backgroundColor = "green";
+      sunStrength-= 3;
+    }
+    else{
+      sprinklerStatus == false;
+      document.getElementById("sprinklerButton").style.backgroundColor = "white";
+    }
+
+  
+
+    
+
+
+    //stops setTimeout loop
+  } else if (sunTimer >= 24) { //if the timer reaches 20 seconds
+    
+    document.getElementById("inputButton4").innerHTML = "Simulation Ended"; //changes the start button inner letters
+    alert("Simulation End"); //method alert pop up in browser for final score
+    location.reload();
+    //console.log("Game Over"); 
+  }
+
+  //Sun Timer (inputbutton4 - RAINY DAY - END) ---------------------------
+
+
 }
 
 
