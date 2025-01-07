@@ -121,7 +121,7 @@ function timerIntervals() {
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-//Sun Timer (inputbutton4 - WINTER DAY - START) ---------------------------
+//Sun Timer (inputbutton3 - WINTER DAY - START) ---------------------------
 
   if (sunTimer <= 24) {
     // Dont Touch Below vvvvvvvvvvvvvvvvv
@@ -213,13 +213,13 @@ function timerIntervals() {
     //console.log("Game Over"); 
   }
 
-  //Sun Timer (inputbutton4 - WINTER DAY - END) ---------------------------
+  //Sun Timer (inputbutton3 - WINTER DAY - END) ---------------------------
 
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-  //Sun Timer (inputbutton4 - SUNNY DAY - START) ---------------------------
+  //Sun Timer (inputbutton2 - SUNNY DAY - START) ---------------------------
 
   if (sunTimer <= 24) {
     // Dont Touch Below vvvvvvvvvvvvvvvvv
@@ -311,13 +311,13 @@ function timerIntervals() {
     //console.log("Game Over"); 
   }
 
-  //Sun Timer (inputbutton4 - SUNNY DAY - END) ---------------------------
+  //Sun Timer (inputbutton2 - SUNNY DAY - END) ---------------------------
 
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-  //Sun Timer (inputbutton4 - RAINY DAY - START) ---------------------------
+  //Sun Timer (inputbutton1 - RAINY DAY - START) ---------------------------
 
   if (sunTimer <= 24) {
     // Dont Touch Below vvvvvvvvvvvvvvvvv
@@ -409,7 +409,7 @@ function timerIntervals() {
     //console.log("Game Over"); 
   }
 
-  //Sun Timer (inputbutton4 - RAINY DAY - END) ---------------------------
+  //Sun Timer (inputbutton1 - RAINY DAY - END) ---------------------------
 
 
 }
