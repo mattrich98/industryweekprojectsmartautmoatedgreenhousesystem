@@ -6,22 +6,18 @@ let sprinklerStatus = false;
 let fanStatus = false;
 let sunTimer = 0;
 
-function hotSim(){
-  hotDayStart()
-  timerIntervals()
-  //console.log("testingworks");
-}
 
-function timerIntervals() { 
+
+function hotSim() { 
   sunTimer++; //gametime gets incremented +1 every second
   console.log(sunTimer); //checks gameTime is incrementing (JavaScript is a single-threaded language)
-
+  
   
 //Sun Timer (inputbutton4 - VERY HOT - START) ---------------------------
 
   if (sunTimer <= 24) {
     // Dont Touch Below vvvvvvvvvvvvvvvvv
-    setTimeout(timerIntervals, 750);
+    setTimeout(hotSim, 750);
 
     document.getElementById("timeNumber").innerHTML = sunTimer;
     document.getElementById("inputButton4").innerHTML = "Started";
@@ -110,7 +106,6 @@ function timerIntervals() {
   }
 
 //Sun Timer (inputbutton4 - VERY HOT - END) ---------------------------
-
 
 }
 
