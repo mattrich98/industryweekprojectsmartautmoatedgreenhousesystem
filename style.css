@@ -195,23 +195,64 @@
 }
 
 #window{
+    width: 2px;
+    height: 86px;
     background-color: rgb(0, 0, 0);
+    position: absolute;
+    /*opacity: 70%; */
+    /*border-radius: 100px; */
+    margin-left: 60px;
+    margin-top: 128px;
+    top: 10px;
 }
 
 #heater{
+    width: 12px;
+    height: 23px;
     background-color: rgb(255, 0, 0);
+    position: absolute;
+    /*opacity: 70%; */
+    /*border-radius: 100px; */
+    margin-left: 55px;
+    margin-top: 97px;
+    top: 10px;
 }
 
 #sprinkler{
+    width: 27px;
+    height: 166px;
     background-color: rgb(0, 225, 255);
+    position: absolute;
+    opacity: 20%; 
+    /*border-radius: 100px; */
+    margin-left: 168px;
+    margin-top: 32px;
+    top: 10px;
 }
 
 #fan{
-    background-color: rgb(174, 0, 255);
+    width: 215px;
+    height: 70px;
+    background-color: rgb(141, 141, 141);
+    position: absolute;
+    opacity: 20%; 
+    /*border-radius: 80px;*/
+    margin-left: 60px;
+    margin-top: 152px;
+    top: 10px;
 }
 
 #plant{
+
+    width: 10px;
+    height: 10px;
     background-color: rgb(19, 160, 0);
+    position: absolute;
+    opacity: 70%; 
+    /*border-radius: 80px;*/
+    margin-left: 176px;
+    margin-bottom: 82px;
+    bottom: 10px;
 }
 
 
