@@ -13,7 +13,7 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
 <ol>
 <li><s>Reverse temperature bar, upside-down. (I might try to add radius to the bottom and top, so it looks like a thermometer.)</s></li>
 <li><s>Add other four temperature options</s></li>
-<li>Add the visual imagery that correspond with number changes in javaScript - Part 1: Finish the buttons that chagne with temp bar, do the diagram last, it will be done with position absolute and positioning over the picture that emulates a similar feel to windows, etc.</li>
+<li>Add the visual imagery that correspond with number changes in javaScript - Part 1: Finish the buttons that change with temp bar, do the diagram last, it will be done with position absolute and positioning over the picture that emulates a similar feel to windows, etc.</li>
 <li><s>Add image output box that prints the console code.</s> -- Maybe this is not really necessary to add</li>
 </ol>
 <hr>
