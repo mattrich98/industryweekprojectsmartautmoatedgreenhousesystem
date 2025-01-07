@@ -18,6 +18,10 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
 </ol>
 <hr>
 <br>
+<h4>(This is what happens when all four buttons below are pressed. The goal is to manipulate a plant that reacts to different weather conditions)</h4>
+
+<img src = "diagramSwitch.png">
+<br>
 <br>
 <br>
 <br>
