@@ -6,13 +6,21 @@ let sprinklerStatus = false;
 let fanStatus = false;
 let sunTimer = 0;
 
+// If statements for visuals of (Window, Heater, Sprinkler, Fan)
 
+if (windowStatus = true){
+  document.getElementById("window").style.opacity = "100" + "px";
+
+}
+
+
+// If Statements bottom
 
 function hotSim() { 
   sunTimer++; //gametime gets incremented +1 every second
   console.log(sunTimer); //checks gameTime is incrementing (JavaScript is a single-threaded language)
   
-  
+
 //Sun Timer (inputbutton4 - VERY HOT - START) ---------------------------
 
   if (sunTimer <= 24) {
