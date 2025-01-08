@@ -25,6 +25,7 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
 <br>
 <li>I will need to make if statements that respond to the visuals once they reach specific numbers.</li>
 <li>Its important to make sure that the very hot simulator button is completed fully first. (This will make the other three buttons much easier to complete, copying 'hotSim function' and then changes to cold sim/etc and numbers accordingly)</li>
+<li>I plan to use the OR operator for the if statements since I want those to be able to have two uses. Maybe I'll use || to get used to those.</li>
 <br>
 <br>
 <br>
