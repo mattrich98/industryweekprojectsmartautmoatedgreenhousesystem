@@ -19,11 +19,13 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
 <hr>
 <br>
 <h4>(This is what happens when all four buttons below are pressed. The goal is to manipulate a plant that reacts to different weather conditions)</h4>
-
-<img src = "diagramSwitch.png">
+<br>
+<br>
+<p align="center"><img src = "diagramSwitch.png"></p>
 <br>
 <li>I will need to make if statements that respond to the visuals once they reach specific numbers.</li>
 <li>Its important to make sure that the very hot simulator button is completed fully first. (This will make the other three buttons much easier to complete, copying 'hotSim function' and then changes to cold sim/etc and numbers accordingly)</li>
+<li>I plan to use the OR operator for the if statements since I want those to be able to have two uses. Maybe I'll use || to get used to those.</li>
 <br>
 <br>
 <br>
