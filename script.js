@@ -122,6 +122,7 @@ function windowON() {
   if(windowStatus == true){
     document.getElementById("windowButton").style.backgroundColor = "green";
     document.getElementById("window").style.opacity = 100 + "%"
+    
     sunStrength++;
     console.log(sunStrength);
     document.getElementById("sunPercent").innerHTML = sunStrength;
@@ -176,6 +177,7 @@ function fanON() {
   if(fanStatus == true){
     document.getElementById("fanButton").style.backgroundColor = "green";
     document.getElementById("fan").style.opacity = 20 + "%"
+    
     sunStrength-= 3;
     console.log(sunStrength);
     document.getElementById("sunPercent").innerHTML = sunStrength;
