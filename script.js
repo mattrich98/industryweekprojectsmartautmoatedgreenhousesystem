@@ -139,12 +139,14 @@ function heaterON() {
 
   if(heaterStatus == true){
     document.getElementById("heaterButton").style.backgroundColor = "green";
+    document.getElementById("heater").style.opacity = 100 + "%"
     sunStrength+= 1;
     console.log(sunStrength);
     document.getElementById("sunPercent").innerHTML = sunStrength;
   }
   else{
     document.getElementById("heaterButton").style.backgroundColor = "white";
+    document.getElementById("heater").style.opacity = 0 + "%"
   }
 }
 
@@ -155,12 +157,14 @@ function sprinklerON() {
 
   if(sprinklerStatus == true){
     document.getElementById("sprinklerButton").style.backgroundColor = "green";
+    document.getElementById("sprinkler").style.opacity = 20 + "%"
     sunStrength-= 3;
     console.log(sunStrength);
     document.getElementById("sunPercent").innerHTML = sunStrength;
   }
   else{
     document.getElementById("sprinklerButton").style.backgroundColor = "white";
+    document.getElementById("sprinkler").style.opacity = 0 + "%"
   }
 }
 
@@ -171,12 +175,14 @@ function fanON() {
 
   if(fanStatus == true){
     document.getElementById("fanButton").style.backgroundColor = "green";
+    document.getElementById("fan").style.opacity = 20 + "%"
     sunStrength-= 3;
     console.log(sunStrength);
     document.getElementById("sunPercent").innerHTML = sunStrength;
   }
   else{
     document.getElementById("fanButton").style.backgroundColor = "white";
+    document.getElementById("fan").style.opacity = 0 + "%"
   }
 }
 
