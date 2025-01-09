@@ -15,6 +15,7 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
 <li><s>Add other four temperature options</s></li>
 <li>Add the visual imagery that correspond with number changes in javaScript - Part 1: Finish the buttons that change with temp bar, do the diagram last, it will be done with position absolute and positioning over the picture that emulates a similar feel to windows, etc.</li>
 <li><s>Add image output box that prints the console code.</s> -- Maybe this is not really necessary to add</li>
+<li>It would be nice to add numbers for water pressure and other things but overall I just want to focus on the greenhouse visuals. Afterwards continuing with the odin project and learning new things</li>
 </ol>
 <hr>
 <br>
