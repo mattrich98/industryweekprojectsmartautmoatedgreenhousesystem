@@ -26,6 +26,7 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
 <li>I will need to make if statements that respond to the visuals once they reach specific numbers.</li>
 <li>Its important to make sure that the very hot simulator button is completed fully first. (This will make the other three buttons much easier to complete, copying 'hotSim function' and then changes to cold sim/etc and numbers accordingly)</li>
 <li>I plan to use the OR operator for the if statements since I want those to be able to have two uses. Maybe I'll use || to get used to those.</li>
+<li>It would be nice to add numbers for water pressure, and other things. Overall, I just want to focus on the greenhouse visuals; afterwards continuing with the odin project and learning new things.</li>
 <br>
 <br>
 <br>
