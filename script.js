@@ -135,7 +135,7 @@ function windowON() {
 
 // Heater ------------------------------ //
 function heaterON() {
-  heaterStatus = !heaterStatus;
+  heaterStatus = !heaterStatus; 
   console.log(heaterStatus);
 
   if(heaterStatus == true){
