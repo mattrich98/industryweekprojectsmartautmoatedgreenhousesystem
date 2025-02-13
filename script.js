@@ -35,13 +35,44 @@ if(sunStrength < 35) {
 if(sunStrength >= 17){
   sunStrength -= 3;
 }
+
 if(sunStrength < 15){
   windowStatus == true;
   document.getElementById("windowButton").style.backgroundColor = "green";
+  document.getElementById("window").style.opacity = 100 + "%"
   sunStrength += 3;
 }
-
+  else{
+    windowStatus == false;
+    document.getElementById("windowButton").style.backgroundColor = "white";
+    document.getElementById("window").style.opacity = 0 + "%"
+    sunStrength -= 3;
+  }
+if(sunStrength <= 13){
+  heaterStatus == true;
+  document.getElementById("heaterButton").style.backgroundColor = "green";
+  document.getElementById("heater").style.opacity = 100 + "%"
+  sunStrength += 1;
+}  else{
+    heaterStatus == false;
+    document.getElementById("heaterButton").style.backgroundColor = "white";
+    document.getElementById("heater").style.opacity = 0 + "%"
+    sunStrength -=1;
+  }
+if(sunStrength >= 25){
+  fanStatus == true;
+  document.getElementById("fanButton").style.backgroundColor = "green";
+  document.getElementById("fan").style.opacity = 20 + "%"
+  sunStrength -=3;
+  }
+  else{  fanStatus == false;
+    document.getElementById("fanButton").style.backgroundColor = "white";
+    document.getElementById("fan").style.opacity = 0 + "%"
+    sunStrength +=3;
+  }
 }
+
+
   
 
 
