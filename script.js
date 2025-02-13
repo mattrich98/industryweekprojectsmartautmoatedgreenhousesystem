@@ -29,11 +29,22 @@ function hotSim() {
     document.getElementById("inputButton4").onclick = sunTimer; //so you can only click the play button once to start game
 
 
+//--------------------------------------------------------------------------------------------------------------------------------- (divider)
+
+
     if (sunStrength < 35 ) {
-      sunStrength += 5;
-      document.getElementById("sunPercent").innerHTML = sunStrength;
-      document.getElementById("sunPercent").style.height = sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + "px";
+
+      sunStrength += 5; // (This is the value that changes the temperature, it needs to be linked with other sections to connect)
+
+      document.getElementById("sunPercent").innerHTML = sunStrength; //(Links sunstrength with red thermostat, changes number)
+
+      // (this part below doesn't make sense with the above calculations)
+      //document.getElementById("sunPercent").style.height = sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + "px";
+
+
     } else {
+
+
       sunStrength = 35;
       document.getElementById("sunPercent").innerHTML = sunStrength;
       //document.getElementById("sunPercent").style.height = "35px";
@@ -42,7 +53,9 @@ function hotSim() {
     if (sunTimer >= 17) {
       sunStrength -= 3;
       document.getElementById("sunPercent").innerHTML = sunStrength;
-      document.getElementById("sunPercent").style.height = sunStrength - sunStrength - sunStrength - sunStrength - sunStrength -sunStrength - sunStrength + "px";
+
+      // (this part below doesn't make sense with the above calculations)
+      //document.getElementById("sunPercent").style.height = sunStrength - sunStrength - sunStrength - sunStrength - sunStrength -sunStrength - sunStrength + "px";
     } 
 
     if(sunStrength <= 15){
