@@ -9,7 +9,7 @@ let sunTimer = 0;
 
 function hotSim() { 
   sunTimer++; //gametime gets incremented +1 every second
-  console.log(sunTimer); //checks gameTime is incrementing (JavaScript is a single-threaded language)
+  //console.log(sunTimer); //checks gameTime is incrementing (JavaScript is a single-threaded language) <----- Logging the timer 
   
 
 
