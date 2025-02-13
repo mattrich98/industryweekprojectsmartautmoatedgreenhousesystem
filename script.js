@@ -24,19 +24,22 @@ if (sunTimer <= 24){ //-- 24 represents 24 hours
   document.getElementById("inputButton4").style.backgroundColor = "green";
   document.getElementById("inputButton4").onclick = sunTimer; //-- Press Hot Button only once
 }
+
+
 //________________________________________________________________________________________________________
 
 
 if(sunStrength < 35) {
   sunStrength += 5; //Correct Value for temperature (checked)
-    } else {
-      sunStrength = 35;
-      document.getElementById("sunPercent").innerHTML = sunStrength;
-}
-
-if(sunStrength >= 17)
+} 
+if(sunStrength >= 17){
   sunStrength -= 3;
-
+}
+if(sunStrength < 15){
+  windowStatus == true;
+  document.getElementById("windowButton").style.backgroundColor = "green";
+  sunStrength += 3;
+}
 
 }
   
