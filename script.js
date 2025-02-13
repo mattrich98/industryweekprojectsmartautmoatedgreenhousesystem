@@ -124,9 +124,9 @@ function windowON() {
     document.getElementById("window").style.opacity = 100 + "%"
     
     sunStrength++;
-    console.log(sunStrength);
+    //console.log(sunStrength); <----------- SEPERATE VALUE FROM AUTOMATION
     document.getElementById("sunPercent").innerHTML = sunStrength;
-    document.getElementById("sunPercent").style.height = (sunStrength * 6) + "px";
+    document.getElementById("sunPercent").style.height = (sunStrength * 6) + "px"; //<--------------- HERE TO CHANGE -----------------//
   }
   else{
     document.getElementById("windowButton").style.backgroundColor = "white";
