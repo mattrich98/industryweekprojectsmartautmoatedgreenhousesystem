@@ -126,6 +126,7 @@ function windowON() {
     sunStrength++;
     console.log(sunStrength);
     document.getElementById("sunPercent").innerHTML = sunStrength;
+    document.getElementById("sunPercent").style.height = (sunStrength * 6) + "px";
   }
   else{
     document.getElementById("windowButton").style.backgroundColor = "white";
