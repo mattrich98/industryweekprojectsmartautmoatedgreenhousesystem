@@ -6,6 +6,9 @@ let sprinklerStatus = false;
 let fanStatus = false;
 let sunTimer = 0;
 
+/*Maybe its best to remake the hotSim() function*/
+/*ins key to stop writing over code */
+
 
 function hotSim() { 
   sunTimer++; //gametime gets incremented +1 every second
