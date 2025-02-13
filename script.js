@@ -9,6 +9,29 @@ let sunTimer = 0;
 /*Maybe its best to remake the hotSim() function*/
 /*ins key to stop writing over code */
 
+function hotSim2(){
+
+//Timer 
+sunTimer++;
+console.log(sunTimer); //-- Greenhouse Timer
+console.log(sunStrength); // Correct value for temperature
+if (sunTimer <= 24){ //-- 24 represents 24 hours
+  sunStrength++;
+  setTimeout(hotSim, 750); //Makes looping repetion
+  document.getElementById("timeNumber").innerHTML = sunTimer;
+  document.getElementById("inputButton4").innerHTML = "Started";
+  document.getElementById("inputButton4").style.backgroundColor = "green";
+  document.getElementById("inputButton4").onclick = sunTimer; //-- Press Hot Button only once
+}
+
+
+
+//Timer End
+
+
+}
+
+
 
 function hotSim() { 
   sunTimer++; //gametime gets incremented +1 every second
@@ -109,10 +132,6 @@ function hotSim() {
       document.getElementById("sprinklerButton").style.backgroundColor = "white";
     }
 
-  
-
-    
-
 
     //stops setTimeout loop
   } else if (sunTimer >= 24) { //if the timer reaches 20 seconds
@@ -125,7 +144,7 @@ function hotSim() {
 
 //Sun Timer (inputbutton4 - VERY HOT - END) ---------------------------
 
-}
+} 
 
 
 
