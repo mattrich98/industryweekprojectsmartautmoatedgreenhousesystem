@@ -32,6 +32,20 @@ if(sunStrength < 35) {
 if(sunStrength >= 17){
   sunStrength -= 3;
 }
+if(sunStrength >= 10){
+  document.getElementById("plant").style.height = 10 + "%"
+}
+if(sunStrength >= 15){
+  document.getElementById("plant").style.height = 20 + "%"
+}
+if(sunStrength >=22){
+  document.getElementById("plant").style.height = 30 + "%"
+  document.getElementById("plant2").style.opacity = 100 + "%"
+}
+if(sunStrength <=22){
+  document.getElementById("plant2").style.opacity = 0 + "%"
+}
+
 //_______________________________________(Button Changing Statistics)______________________________________
 if(sunStrength < 15){
   windowStatus == true;

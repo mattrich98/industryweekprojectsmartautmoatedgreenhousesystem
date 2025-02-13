@@ -255,6 +255,18 @@
     bottom: 10px;
 }
 
+#plant2{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: rgb(238, 255, 0);
+    position: absolute;
+    opacity: 0%; 
+    /*border-radius: 80px;*/
+    margin-left: 167px;
+    margin-bottom: 170px;
+    bottom: 10px;
+}
 
 #profileLink {
     width: 250px;
