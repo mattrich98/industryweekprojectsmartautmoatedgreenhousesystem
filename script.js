@@ -10,26 +10,36 @@ let sunTimer = 0;
 /*ins key to stop writing over code */
 
 function hotSim2(){
-
 //Timer 
 sunTimer++;
-console.log(sunTimer); //-- Greenhouse Timer
-console.log(sunStrength); // Correct value for temperature
+//console.log(sunTimer); //-- Greenhouse Timer
+console.log(sunStrength); // Correct value for temperature 
+document.getElementById("sunPercent").style.height = (sunStrength * 6) + "px"; //So the bar looks bigger 
+document.getElementById("sunPercent").innerHTML = sunStrength; //Temperature number change
+
 if (sunTimer <= 24){ //-- 24 represents 24 hours
-  sunStrength++;
-  setTimeout(hotSim, 750); //Makes looping repetion
+  setTimeout(hotSim2, 750); //Makes looping repetion with how long between
   document.getElementById("timeNumber").innerHTML = sunTimer;
   document.getElementById("inputButton4").innerHTML = "Started";
   document.getElementById("inputButton4").style.backgroundColor = "green";
   document.getElementById("inputButton4").onclick = sunTimer; //-- Press Hot Button only once
 }
+//________________________________________________________________________________________________________
 
 
+if(sunStrength < 35) {
+  sunStrength += 5; //Correct Value for temperature (checked)
+    } else {
+      sunStrength = 35;
+      document.getElementById("sunPercent").innerHTML = sunStrength;
+}
 
-//Timer End
+if(sunStrength >= 17)
+  sunStrength -= 3;
 
 
 }
+  
 
 
 
@@ -104,9 +114,6 @@ function hotSim() {
       document.getElementById("heaterButton").style.backgroundColor = "white";
     }
 
-
-
-
     if(sunStrength >= 25){
       fanStatus == true;
       document.getElementById("fanButton").style.backgroundColor = "green";
@@ -116,11 +123,6 @@ function hotSim() {
       windowStatus == false;
       document.getElementById("fanButton").style.backgroundColor = "white";
     }
-
-
-
-
-
 
     if(sunStrength >= 19){
       sprinklerStatus == true;
