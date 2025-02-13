@@ -6,11 +6,8 @@ let sprinklerStatus = false;
 let fanStatus = false;
 let sunTimer = 0;
 
-/*Maybe its best to remake the hotSim() function*/
-/*ins key to stop writing over code */
-
 function hotSim2(){
-//Timer 
+//______________________________________(Timer)____________________________________________________________
 sunTimer++;
 //console.log(sunTimer); //-- Greenhouse Timer
 console.log(sunStrength); // Correct value for temperature 
@@ -23,19 +20,19 @@ if (sunTimer <= 24){ //-- 24 represents 24 hours
   document.getElementById("inputButton4").innerHTML = "Started";
   document.getElementById("inputButton4").style.backgroundColor = "green";
   document.getElementById("inputButton4").onclick = sunTimer; //-- Press Hot Button only once
+} else if(sunTimer >= 24){
+  document.getElementById("inputButton4").innerHTML = "Simulation Ended";
+  alert("Simulation End");
+  location.reload();
 }
-
-
-//________________________________________________________________________________________________________
-
-
+//______________________________________(Temperature Changing Statistics)__________________________________
 if(sunStrength < 35) {
-  sunStrength += 5; //Correct Value for temperature (checked)
+  sunStrength += 9; //Correct Value for temperature (checked)
 } 
 if(sunStrength >= 17){
   sunStrength -= 3;
 }
-
+//_______________________________________(Button Changing Statistics)______________________________________
 if(sunStrength < 15){
   windowStatus == true;
   document.getElementById("windowButton").style.backgroundColor = "green";
@@ -52,7 +49,7 @@ if(sunStrength <= 13){
   heaterStatus == true;
   document.getElementById("heaterButton").style.backgroundColor = "green";
   document.getElementById("heater").style.opacity = 100 + "%"
-  sunStrength += 1;
+  sunStrength += 8;
 }  else{
     heaterStatus == false;
     document.getElementById("heaterButton").style.backgroundColor = "white";
@@ -63,126 +60,27 @@ if(sunStrength >= 25){
   fanStatus == true;
   document.getElementById("fanButton").style.backgroundColor = "green";
   document.getElementById("fan").style.opacity = 20 + "%"
-  sunStrength -=3;
+  sunStrength -=20;
   }
-  else{  fanStatus == false;
+  else{
+    fanStatus == false;
     document.getElementById("fanButton").style.backgroundColor = "white";
     document.getElementById("fan").style.opacity = 0 + "%"
     sunStrength +=3;
   }
-}
-
-
-  
-
-
-
-function hotSim() { 
-  sunTimer++; //gametime gets incremented +1 every second
-  //console.log(sunTimer); //checks gameTime is incrementing (JavaScript is a single-threaded language) <----- Logging the timer 
-  console.log(sunStrength); // (This is the correct value, not on screen for automation)
-
-//Sun Timer (inputbutton4 - VERY HOT - START) ---------------------------
-
-  if (sunTimer <= 24) {
-    // Dont Touch Below vvvvvvvvvvvvvvvvv
-    setTimeout(hotSim, 750);
-
-    document.getElementById("timeNumber").innerHTML = sunTimer;
-    document.getElementById("inputButton4").innerHTML = "Started";
-    document.getElementById("inputButton4").style.backgroundColor = "green";
-
-    //stops play button press
-    document.getElementById("inputButton4").onclick = sunTimer; //so you can only click the play button once to start game
-
-
-//--------------------------------------------------------------------------------------------------------------------------------- (divider)
-
-
-    if (sunStrength < 35 ) {
-      sunStrength += 5; // (This is the value that changes the temperature, it needs to be linked with other sections to connect)
-      document.getElementById("sunPercent").innerHTML = sunStrength; //(Links sunstrength with red thermostat, changes number)
-      document.getElementById("sunPercent").style.height = (sunStrength * 6) + "px"; // 
-      // (this part below doesn't make sense with the above calculations)
-      //document.getElementById("sunPercent").style.height = sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + "px";
-    } else {
-      sunStrength = 35;
-      document.getElementById("sunPercent").innerHTML = sunStrength;
-      //document.getElementById("sunPercent").style.height = "35px";
-    }
-
-
-    if (sunTimer >= 17) {
-      sunStrength -= 3;
-      document.getElementById("sunPercent").innerHTML = sunStrength;
-      document.getElementById("sunPercent").style.height = (sunStrength * -6) + "px"; // 
-      // (this part below doesn't make sense with the above calculations)
-      //document.getElemen
-      // tById("sunPercent").style.height = sunStrength - sunStrength - sunStrength - sunStrength - sunStrength -sunStrength - sunStrength + "px";
-    } 
-
-
-    if(sunStrength <= 15){
-      windowStatus == true;
-      document.getElementById("windowButton").style.backgroundColor = "green";
-      sunStrength++
-      sunStrength++
-      sunStrength++
-    }
-    else{
-      windowStatus == false;
-      document.getElementById("windowButton").style.backgroundColor = "white";
-      sunStrength--;
-      sunStrength--;
-      sunStrength--;
-
-    }
-
-    if(sunStrength <= 13){
-      heaterStatus == true;
-      document.getElementById("heaterButton").style.backgroundColor = "green";
-      sunStrength += 1;
-    }
-    else{
-      windowStatus == false;
-      document.getElementById("heaterButton").style.backgroundColor = "white";
-    }
-
-    if(sunStrength >= 25){
-      fanStatus == true;
-      document.getElementById("fanButton").style.backgroundColor = "green";
-      sunStrength -=3;
-    }
-    else{
-      windowStatus == false;
-      document.getElementById("fanButton").style.backgroundColor = "white";
-    }
-
-    if(sunStrength >= 19){
-      sprinklerStatus == true;
-      document.getElementById("sprinklerButton").style.backgroundColor = "green";
-      sunStrength-= 3;
-    }
-    else{
-      sprinklerStatus == false;
-      document.getElementById("sprinklerButton").style.backgroundColor = "white";
-    }
-
-
-    //stops setTimeout loop
-  } else if (sunTimer >= 24) { //if the timer reaches 20 seconds
-    
-    document.getElementById("inputButton4").innerHTML = "Simulation Ended"; //changes the start button inner letters
-    alert("Simulation End"); //method alert pop up in browser for final score
-    location.reload();
-    //console.log("Game Over"); 
+if(sunStrength >= 19){
+  sprinklerStatus == true;
+  document.getElementById("sprinklerButton").style.backgroundColor = "green";
+  document.getElementById("sprinkler").style.opacity = 20 + "%"
+  sunStrength-= 3;
   }
-
-//Sun Timer (inputbutton4 - VERY HOT - END) ---------------------------
-
-} 
-
-
+  else{
+    sprinklerStatus == false;
+    document.getElementById("sprinklerButton").style.backgroundColor = "white";
+    document.getElementById("sprinkler").style.opacity = 0 + "%"
+    sunStrength+= 0;
+  }
+}
 
 
 // Window ------------------------------ //
