@@ -8,6 +8,8 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
 <br>
 (However, I will still complete the project)
 <br>
+I think I'm a little burnt out so, I'll try to break down things into very small tasks instead.
+<br>
 <hr>
 <h3>New Simplified Plans:</h3>
 <ol>
@@ -19,7 +21,7 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
 <hr>
 <br>
 <h4>(This is what happens when all four buttons below are pressed. The goal is to manipulate a plant that reacts to different weather conditions)</h4>
-<br>
+<br> 
 <br>
 <p align="center"><img src = "diagramSwitch.png"></p>
 <br>
