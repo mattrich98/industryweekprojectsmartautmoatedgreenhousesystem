@@ -10,10 +10,7 @@ let sunTimer = 0;
 function hotSim() { 
   sunTimer++; //gametime gets incremented +1 every second
   //console.log(sunTimer); //checks gameTime is incrementing (JavaScript is a single-threaded language) <----- Logging the timer 
-  
-
-
-
+  console.log(sunStrength); // (This is the correct value, not on screen for automation)
 
 //Sun Timer (inputbutton4 - VERY HOT - START) ---------------------------
 
@@ -33,39 +30,42 @@ function hotSim() {
 
 
     if (sunStrength < 35 ) {
-
       sunStrength += 5; // (This is the value that changes the temperature, it needs to be linked with other sections to connect)
-
       document.getElementById("sunPercent").innerHTML = sunStrength; //(Links sunstrength with red thermostat, changes number)
-
+      document.getElementById("sunPercent").style.height = (sunStrength * 6) + "px"; // 
       // (this part below doesn't make sense with the above calculations)
       //document.getElementById("sunPercent").style.height = sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + sunStrength + "px";
-
-
     } else {
-
-
       sunStrength = 35;
       document.getElementById("sunPercent").innerHTML = sunStrength;
       //document.getElementById("sunPercent").style.height = "35px";
     }
 
+
     if (sunTimer >= 17) {
       sunStrength -= 3;
       document.getElementById("sunPercent").innerHTML = sunStrength;
-
+      document.getElementById("sunPercent").style.height = (sunStrength * -6) + "px"; // 
       // (this part below doesn't make sense with the above calculations)
-      //document.getElementById("sunPercent").style.height = sunStrength - sunStrength - sunStrength - sunStrength - sunStrength -sunStrength - sunStrength + "px";
+      //document.getElemen
+      // tById("sunPercent").style.height = sunStrength - sunStrength - sunStrength - sunStrength - sunStrength -sunStrength - sunStrength + "px";
     } 
+
 
     if(sunStrength <= 15){
       windowStatus == true;
       document.getElementById("windowButton").style.backgroundColor = "green";
       sunStrength++
+      sunStrength++
+      sunStrength++
     }
     else{
       windowStatus == false;
       document.getElementById("windowButton").style.backgroundColor = "white";
+      sunStrength--;
+      sunStrength--;
+      sunStrength--;
+
     }
 
     if(sunStrength <= 13){
@@ -139,7 +139,7 @@ function windowON() {
     sunStrength++;
     //console.log(sunStrength); <----------- SEPERATE VALUE FROM AUTOMATION
     document.getElementById("sunPercent").innerHTML = sunStrength;
-    document.getElementById("sunPercent").style.height = (sunStrength * 6) + "px"; //<--------------- HERE TO CHANGE -----------------//
+    document.getElementById("sunPercent").style.height = (sunStrength * 6)+ "px"; //<--------------- HERE TO CHANGE -----------------//
   }
   else{
     document.getElementById("windowButton").style.backgroundColor = "white";
