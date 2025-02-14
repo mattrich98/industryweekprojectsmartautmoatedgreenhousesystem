@@ -99,95 +99,55 @@ if(sunStrength >= 19){
 //_______________________________________(Button Changing Pressables)______________________________________
 
 //_____Window Button_____
-
-
-
-//_____Heater Button_____
-
-
-
-//_____Sprinkler Button_____
-
-
-
-//_____Fan Button_____
-
-
-
-
-
-
-// Window ------------------------------ //
 function windowON() {
   windowStatus = !windowStatus;
-  console.log(windowStatus);
-
-  if(windowStatus == true){
+  if (windowStatus == true) {
     document.getElementById("windowButton").style.backgroundColor = "green";
-    document.getElementById("window").style.opacity = 100 + "%"
-    
+    document.getElementById("window").style.opacity = 100 + "%";
     sunStrength++;
-    //console.log(sunStrength); <----------- SEPERATE VALUE FROM AUTOMATION
     document.getElementById("sunPercent").innerHTML = sunStrength;
-    document.getElementById("sunPercent").style.height = (sunStrength * 6)+ "px"; //<--------------- HERE TO CHANGE -----------------//
-  }
-  else{
+    document.getElementById("sunPercent").style.height = sunStrength * 6 + "px";
+  } else {
     document.getElementById("windowButton").style.backgroundColor = "white";
-    document.getElementById("window").style.opacity = 0 + "%"
+    document.getElementById("window").style.opacity = 0 + "%";
   }
 }
-
-// Heater ------------------------------ //
+//_____Heater Button_____
 function heaterON() {
-  heaterStatus = !heaterStatus; 
-  console.log(heaterStatus);
-
-  if(heaterStatus == true){
+  heaterStatus = !heaterStatus;
+  if (heaterStatus == true) {
     document.getElementById("heaterButton").style.backgroundColor = "green";
-    document.getElementById("heater").style.opacity = 100 + "%"
-    sunStrength+= 1;
-    console.log(sunStrength);
+    document.getElementById("heater").style.opacity = 100 + "%";
+    sunStrength += 1;
     document.getElementById("sunPercent").innerHTML = sunStrength;
-  }
-  else{
+  } else {
     document.getElementById("heaterButton").style.backgroundColor = "white";
-    document.getElementById("heater").style.opacity = 0 + "%"
+    document.getElementById("heater").style.opacity = 0 + "%";
   }
 }
-
-// Sprinkler ------------------------------ //
+//_____Fan Button_____
+function fanON() {
+  fanStatus = !fanStatus;
+  if (fanStatus == true) {
+    document.getElementById("fanButton").style.backgroundColor = "green";
+    document.getElementById("fan").style.opacity = 20 + "%";
+    sunStrength -= 3;
+    document.getElementById("sunPercent").innerHTML = sunStrength;
+  } else {
+    document.getElementById("fanButton").style.backgroundColor = "white";
+    document.getElementById("fan").style.opacity = 0 + "%";
+  }
+}
+//_____Sprinkler Button_____
 function sprinklerON() {
   sprinklerStatus = !sprinklerStatus;
-  console.log(sprinklerStatus);
-
-  if(sprinklerStatus == true){
+  if (sprinklerStatus == true) {
     document.getElementById("sprinklerButton").style.backgroundColor = "green";
-    document.getElementById("sprinkler").style.opacity = 20 + "%"
-    sunStrength-= 3;
-    console.log(sunStrength);
+    document.getElementById("sprinkler").style.opacity = 20 + "%";
+    sunStrength -= 3;
     document.getElementById("sunPercent").innerHTML = sunStrength;
-  }
-  else{
+  } else {
     document.getElementById("sprinklerButton").style.backgroundColor = "white";
-    document.getElementById("sprinkler").style.opacity = 0 + "%"
-  }
-}
-
-// fan ------------------------------ //
-function fanON() {
- fanStatus = !fanStatus;
-  console.log(fanStatus);
-
-  if(fanStatus == true){
-    document.getElementById("fanButton").style.backgroundColor = "green";
-    document.getElementById("fan").style.opacity = 20 + "%"
-    
-    sunStrength-= 3;
-    console.log(sunStrength);
-    document.getElementById("sunPercent").innerHTML = sunStrength;
-  }
-  else{
-    document.getElementById("fanButton").style.backgroundColor = "white";
-    document.getElementById("fan").style.opacity = 0 + "%"
+    document.getElementById("sprinkler").style.opacity = 0 + "%";
   }
 }
