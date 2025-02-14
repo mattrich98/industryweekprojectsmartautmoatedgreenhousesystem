@@ -5,10 +5,19 @@
 <hr>
 As part of the software development bootcamp curriculum, each of us is tasked with creating a project that demonstrates an automated greenhouse. (I misunderstood the assignment, it was meant to be group work)
 <br>
-<br>
-Conclusion: The main features of the project have been completed. I will now move on to the next project on the odin project website. I would just be repeating and changing the numbers of other weather buttons (Maybe I'll do that in the future). The buttons have a purpose and the automation works well and matches the sunStrength variable numbers, so I'm overall happy because, it makes sense to me now.
-<br>
-I think I'm a little burnt out so, I'll try to break down things into very small tasks instead.
+<hr>
+<h3>Conclusion:</h3> 
+<ul>
+  <li>
+    The main features of the project have been completed. I will now move on to the next project on the odin project website. 
+  </li>
+  <li>
+    I would just be repeating and changing the numbers of other weather buttons (Maybe I'll do that in the future).now.
+  </li>
+  <li>
+     The buttons have a purpose and the automation works well and matches the sunStrength variable numbers, so I'm overall happy because, it makes sense to me 
+  </li>
+</ul>
 <br>
 <hr>
 <h3>New Simplified Plans:</h3>
