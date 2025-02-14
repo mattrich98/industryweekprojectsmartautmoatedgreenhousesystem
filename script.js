@@ -96,6 +96,26 @@ if(sunStrength >= 19){
   }
 }
 
+//_______________________________________(Button Changing Pressables)______________________________________
+
+//_____Window Button_____
+
+
+
+//_____Heater Button_____
+
+
+
+//_____Sprinkler Button_____
+
+
+
+//_____Fan Button_____
+
+
+
+
+
 
 // Window ------------------------------ //
 function windowON() {
