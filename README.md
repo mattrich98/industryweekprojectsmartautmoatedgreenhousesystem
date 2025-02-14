@@ -12,10 +12,10 @@ As part of the software development bootcamp curriculum, each of us is tasked wi
     The main features of the project have been completed. I will now move on to the next project on the odin project website. 
   </li>
   <li>
-    I would just be repeating and changing the numbers of other weather buttons (Maybe I'll do that in the future).now.
+    I would just be repeating and changing the numbers of other weather buttons (Maybe I'll do that in the future).
   </li>
   <li>
-     The buttons have a purpose and the automation works well and matches the sunStrength variable numbers, so I'm overall happy because, it makes sense to me 
+     The buttons have a purpose and the automation works well and matches the sunStrength variable numbers, so I'm overall happy because, it makes sense to me.
   </li>
 </ul>
 <br>
